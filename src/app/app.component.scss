@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  .cell {
+    height: 40px;
+    width: 40px;
+    border: solid 1px black;
+  }
+  .row {
+    display: flex;
+  }
+  .form {
+    .field {
+      input {
+        width: 500px;
+        &.ng-invalid {
+        border: 1px solid red;
+        outline: none;
+      }
+    }
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
+    }
+    button {
+      margin-top: 24px;
+      width: 100%
+    }
+  }
+}
